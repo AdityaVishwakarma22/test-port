@@ -182,7 +182,7 @@ header {
 .container {
   background-color: blanchedalmond;
   border-radius: 80px;
-  padding: 80px;
+  padding: 80px 80px 0;
   margin: 100px;
 }
 
@@ -235,7 +235,7 @@ header {
   height: 450px;
   width: 450px;
   border-radius: 45px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .description-box {
@@ -265,6 +265,12 @@ header {
 }
 .blue {
   background-color: rgb(86, 86, 190);
+}
+
+.content-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 0;
 }
 
 /* small screen / mobile layout */
