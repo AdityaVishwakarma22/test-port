@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  color: #858484;
+  background-color: coral;
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+.horizontalScroller {
+  display: flex;
+  width: 200%;
+}
+
+/* hero section ==================================================================== */
+.hero-section {
+  background-color: blanchedalmond;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+}
+
+.welcome-heading {
+  width: 60%;
+}
+
+.header,
+.footer {
+  height: 15vh;
+}
+
+.header {
+  background-color: rgb(180, 208, 232);
+}
+.footer {
+  background-color: cadetblue;
+}
+
+.links {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  background-color: aquamarine;
+}
+#about {
+  background-color: rgb(84, 149, 247);
+}
+#projects {
+  background-color: rgb(255, 127, 234);
+}
+
+/* ====================================================================================== */
+
+header,
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  padding: 30px;
+  background-color: antiquewhite;
+}
+nav {
+  background-color: rgb(246, 206, 154);
+  color: black;
+  transform: translateY(-200px);
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  top: -40px;
+}
+
+/* about me section */
+
+.aboutme {
+  color: rgb(133, 132, 132);
+  margin-top: 100px;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.persona {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 94%;
+  margin: 0 0 0 30px;
+}
+.my-photo {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: -1px -12px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.about-me {
+  width: 100%;
+  margin-left: 50px;
+  font-weight: 700;
+  background-color: blanchedalmond;
+  padding: 12px 64px;
+  border-radius: 80px;
+  box-shadow: black -35px 35px 0px;
+}
+.about-me h1 {
+  font-style: italic;
+}
+.skills {
+  text-align: center;
+  background-color: blanchedalmond;
+  color: black;
+  padding: 12px;
+  border-radius: 10px;
+  width: 76%;
+  margin: 120px auto 0;
+}
+/* =================================================================================== */
+
+header {
+  height: 100vh;
+}
+
+.pSection {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+
+.contact {
+  color: white;
+  background-color: #292929;
+  border-radius: 80px;
+  margin: 100px;
+  padding: 80px;
+}
+
+.pContent {
+  width: 65%;
+  background-color: rgba(78, 152, 21, 0.8);
+  color: white;
+  padding: 40px 60px;
+}
+
+.pImage {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 900px;
+}
+
+/* Partial Pinned scroll ============================================================================= */
+
+.container {
+  background-color: blanchedalmond;
+  border-radius: 80px;
+  padding: 80px;
+  margin: 100px;
+}
+
+.panel {
+  width: 100vw;
+}
+
+.container > h1 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.gallery {
+  margin-top: 90px;
+  display: flex;
+}
+
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+  height: 100vh;
+}
+
+/* added starting*/
+
+.desktopContentSection {
+  min-height: 100vh;
+  /* outline:1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.desktopContentSection p,
+.desktopContentSection ul {
+  margin: 10px 0;
+}
+
+/* addeed ending */
+
+.desktopContent {
+  padding-right: 40px;
+}
+
+.box-container {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  width: 450px;
+  border-radius: 45px;
+  margin-top: 40px;
+}
+
+.description-box {
+  margin: 85px 40px;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.red {
+  background-color: rgb(238, 93, 136);
+}
+.pink {
+  background-color: pink;
+}
+.green {
+  background-color: rgb(90, 189, 90);
+}
+.blue {
+  background-color: rgb(86, 86, 190);
+}
+
+/* small screen / mobile layout */
+.mobileContent {
+  display: none;
+  width: 100%;
+}
+
+.mobileContentSection {
+  width: 250px;
+  height: 250px;
+  margin-top: 5em;
+  border-radius: 6vw;
+}
+
+.mobileContentSection:nth-child(1) {
+  margin-top: 0px;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.contact-details {
+  text-align: end;
+}
+
+@media only screen and (max-width: 430px) {
+  .horizontalScroller {
+    width: 200%;
+    display: flex;
+  }
+  .hero-section {
+    height: 200vh;
+  }
+  .about-header {
+    display: block;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 33px 40px;
+  }
+  .about-me {
+    margin: 0 24px 0 10px;
+    padding: 12px 42px;
+  }
+
+  /* copied code start */
+  .left {
+    display: none;
+  }
+
+  .right {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .desktopPhotos {
+    display: none;
+  }
+
+  .mobileContent {
+    display: block;
+    font-size: 28px;
+  }
+  /* copied code end */
+
+  .box-container {
+    display: none;
+  }
+  .contact {
+    padding: 18px 40px;
+    font-size: 18px;
+    width: unset;
+    border-radius: 30px;
+    width: 150%;
+  }
+  .container {
+    padding: 26px;
+    margin: 28px;
+    border-radius: 30px;
+    width: 156%;
+    margin: 2em;
+  }
+  .panel {
+    flex: 0 0 200vw;
+  }
+}
