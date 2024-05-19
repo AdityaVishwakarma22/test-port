@@ -71,7 +71,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 94%;
-  margin: 0 0 0 30px;
+  margin-left: 7%;
 }
 .my-photo {
   height: 300px;
@@ -91,12 +91,6 @@ body {
 }
 .about-me h1 {
   font-style: italic;
-}
-.highlights {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 67px;
 }
 .skills {
   text-align: center;
@@ -265,7 +259,7 @@ header {
 
 @media only screen and (max-width: 430px) {
   .horizontalScroller {
-    width: 200%;
+    /* width: 200%; */
     display: flex;
   }
   .hero-section {
@@ -317,11 +311,13 @@ header {
   }
   .container {
     padding: 26px;
-    margin: 28px;
     border-radius: 30px;
     width: 156%;
-    margin: 2em;
+    margin: 13% 22%;
   }
+  /* .skills {
+    margin: 0;
+  } */
   .panel {
     flex: 0 0 200vw;
   }
