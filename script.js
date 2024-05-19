@@ -56,3 +56,31 @@ const contact = document.querySelector(".contact-btn");
 contact.addEventListener("click", () => {
   window.open("https://calendly.com/interview-aditya/interview-aditya");
 });
+// jokess
+document.querySelector(".jokes-btn").addEventListener("click", fetchJokes);
+
+function fetchJokes() {
+  fetch("https://v2.jokeapi.dev/joke/Pun?blacklistFlags=explicit", {
+    method: "GET",
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(`%c${data.setup}`, "color:blue");
+      console.log(`%c${data.delivery}`, "color:white");
+
+      let setup = document.querySelector(".setup");
+      let delivery = document.querySelector(".delivery");
+
+      setup.textContent = data.setup;
+      delivery.textContent = data.delivery;
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+fetchJokes();

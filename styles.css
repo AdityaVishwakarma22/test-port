@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,11 +6,11 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
-  color: #858484;
-  background-color: coral;
+  font-family: "Noto Sans", sans-serif;
   font-size: 24px;
+  font-weight: 500;
   overflow-x: hidden;
+  position: relative;
 }
 
 .horizontalScroller {
@@ -19,9 +18,29 @@ body {
   width: 200%;
 }
 
+.jokes {
+  background-color: rgba(190, 185, 142, 0.578);
+  padding: 30px;
+  border-radius: 48px;
+  font-style: oblique;
+  margin-top: 40px;
+  position: relative;
+}
+.jokes-btn {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /* hero section ==================================================================== */
 .hero-section {
-  background-color: blanchedalmond;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,68 +53,9 @@ body {
   width: 60%;
 }
 
-.header,
-.footer {
-  height: 15vh;
-}
-
-.header {
-  background-color: rgb(180, 208, 232);
-}
-.footer {
-  background-color: cadetblue;
-}
-
-.links {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#home {
-  background-color: aquamarine;
-}
-#about {
-  background-color: rgb(84, 149, 247);
-}
-#projects {
-  background-color: rgb(255, 127, 234);
-}
-
-/* ====================================================================================== */
-
-header,
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-header {
-  padding: 30px;
-  background-color: antiquewhite;
-}
-nav {
-  background-color: rgb(246, 206, 154);
-  color: black;
-  transform: translateY(-200px);
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  opacity: 0;
-  top: -40px;
-}
-
 /* about me section */
 
 .aboutme {
-  color: rgb(133, 132, 132);
   margin-top: 100px;
 }
 
@@ -124,21 +84,22 @@ nav {
 .about-me {
   width: 100%;
   margin-left: 50px;
-  font-weight: 700;
-  background-color: blanchedalmond;
   padding: 12px 64px;
+  border: 8px solid black;
   border-radius: 80px;
   box-shadow: black -35px 35px 0px;
 }
 .about-me h1 {
   font-style: italic;
 }
+.highlights {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 67px;
+}
 .skills {
   text-align: center;
-  background-color: blanchedalmond;
-  color: black;
-  padding: 12px;
-  border-radius: 10px;
   width: 76%;
   margin: 120px auto 0;
 }
@@ -180,7 +141,7 @@ header {
 /* Partial Pinned scroll ============================================================================= */
 
 .container {
-  background-color: blanchedalmond;
+  border: 8px solid black;
   border-radius: 80px;
   padding: 80px 80px 0;
   margin: 100px;
@@ -236,6 +197,7 @@ header {
   width: 450px;
   border-radius: 45px;
   margin-top: 60px;
+  box-shadow: 6px 16px 26px black;
 }
 
 .description-box {
@@ -292,7 +254,6 @@ header {
 
 .contact-btn {
   padding: 10px 20px;
-  background-color: blanchedalmond;
   border-radius: 10px;
   font-size: 22px;
   cursor: pointer;
